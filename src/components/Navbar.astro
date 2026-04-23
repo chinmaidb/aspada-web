@@ -164,7 +164,11 @@ const { companyProfile } = Astro.props
         }
       </div>
 
-      <button id="mobile-menu-toggle" class="md:hidden z-[130] relative p-2" aria-label="Toggle Menu">
+      <button
+        id="mobile-menu-toggle"
+        class="md:hidden z-[130] relative p-2"
+        aria-label="Toggle Menu"
+      >
         <div id="menu-icon" class="i-lucide-menu text-3xl transition-transform"></div>
         <div id="close-icon" class="i-lucide-x text-3xl transition-transform"></div>
       </button>
@@ -199,6 +203,12 @@ const { companyProfile } = Astro.props
       href="/blog"
       class="text-white hover:text-aspada-gold hover:border-b-2 hover:border-aspada-gold transition-border duration-300 text-3xl font-bold uppercase"
       >News</a
+    >
+
+    <a
+      href="/admin/dms"
+      class="text-white hover:text-aspada-gold hover:border-b-2 hover:border-aspada-gold transition-border duration-300 text-3xl font-bold uppercase"
+      >DMS</a
     >
   </div>
 </nav>

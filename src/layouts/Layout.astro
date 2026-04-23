@@ -1,5 +1,4 @@
 ---
-import MouseHighlight from '../components/MouseHighlight.svelte'
 import MouseTracker from '../components/MouseTracker.svelte'
 import '../styles/global.css'
 interface Props {
@@ -26,7 +25,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <meta name="description" content={description} />
-
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content={Astro.url} />

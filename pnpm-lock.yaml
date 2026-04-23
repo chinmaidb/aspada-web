@@ -53,6 +53,9 @@ importers:
       pocketbase:
         specifier: ^0.26.5
         version: 0.26.8
+      sharp:
+        specifier: ^0.34.5
+        version: 0.34.5
       svelte:
         specifier: ^5.46.1
         version: 5.55.1
