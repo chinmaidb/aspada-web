@@ -172,10 +172,10 @@ export const server = {
     }),
     handler: async ({ cacheId, isHelpful }) => {
       const pb = getPublicPB()
-      const field = isHelpful ? 'helpful_count+' : 'unhelpful_count+'
+      const checkIsHelpful = isHelpful ? 'helpful_count+' : 'unhelpful_count+'
       // Atomic increment in PocketBase
       return await pb.collection(Collections.ChatCache).update(cacheId, {
-        [isHelpful ? 'helpful_count+' : 'unhelpful_count+']: 1,
+        [checkIsHelpful]: 1,
       })
     },
   }),

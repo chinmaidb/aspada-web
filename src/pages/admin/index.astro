@@ -16,7 +16,7 @@ const hasDms = features.includes(UsersFeatureOptions.dms)
       <p class="text-aspada-steel mt-2">Manage your business tools and content.</p>
     </header>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
       {
         hasWebsite && (
           <>
@@ -74,6 +74,13 @@ const hasDms = features.includes(UsersFeatureOptions.dms)
             >
               <h2 class="text-xl font-bold text-aspada-navy group-hover:text-aspada-gold">Stats</h2>
               <p class="mt-2 text-aspada-steel">Manage property statistics and data.</p>
+            </a>
+            <a
+              href="/admin/leads"
+              class="group bg-white rounded-3xl p-8 border border-slate-200 shadow-lg hover:shadow-xl transition"
+            >
+              <h2 class="text-xl font-bold text-aspada-navy group-hover:text-aspada-gold">Leads</h2>
+              <p class="mt-2 text-aspada-steel">Manage potential customer leads and inquiries.</p>
             </a>
           </>
         )

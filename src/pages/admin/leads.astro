@@ -1,0 +1,10 @@
+---
+import LeadsManager from '@/components/admin/LeadsManager.svelte'
+import AdminLayout from '@/layouts/AdminLayout.astro'
+---
+
+<AdminLayout title="Leads Management">
+  <div class="h-full flex flex-col">
+    <LeadsManager client:idle />
+  </div>
+</AdminLayout>

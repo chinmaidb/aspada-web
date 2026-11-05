@@ -83,7 +83,11 @@ const hasDms = features.includes(UsersFeatureOptions.dms)
       >
         <div class="flex-1 overflow-y-auto custom-scrollbar">
           <div class="flex items-center justify-between mb-10">
-            <h2 class="text-aspada-steel font-bold text-xl tracking-tighter">ASPADA ADMIN</h2>
+            <a href="/admin" class="text-aspada-steel font-bold text-xl tracking-tighter">
+              <span class="text-red-500 text-2xl">A</span>SPADA <span class="text-red-500 text-2xl"
+                >A</span
+              >DMIN
+            </a>
           </div>
 
           <nav class="space-y-1">
@@ -131,6 +135,13 @@ const hasDms = features.includes(UsersFeatureOptions.dms)
                   >
                     <span class="i-lucide-bar-chart-3 text-lg opacity-70" />
                     Stats
+                  </a>
+                  <a
+                    href="/admin/leads"
+                    class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-aspada-steel/5 transition-colors font-medium"
+                  >
+                    <span class="i-lucide-users text-lg opacity-70" />
+                    Leads
                   </a>
                 </>
               )
@@ -202,12 +213,7 @@ const hasDms = features.includes(UsersFeatureOptions.dms)
           </nav>
         </div>
 
-        <form
-          id="logout-form"
-          method="POST"
-          action={actions.logout}
-          class="mt-auto pt-6"
-        >
+        <form id="logout-form" method="POST" action={actions.logout} class="mt-auto pt-6">
           <button
             type="submit"
             class="w-full bg-red-500/10 hover:bg-red-500 text-red-600 hover:text-white py-2.5 px-4 rounded-xl font-bold transition-all cursor-pointer flex items-center justify-center gap-2 border border-red-500/20"

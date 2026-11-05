@@ -39,6 +39,7 @@
         "npm:prettier-plugin-organize-imports@^4.3.0",
         "npm:prettier-plugin-svelte@^3.4.1",
         "npm:prettier@^3.8.0",
+        "npm:sharp@~0.34.5",
         "npm:svelte-eslint-parser@^1.4.1",
         "npm:svelte-french-toast@^1.2.0",
         "npm:svelte@^5.46.1",
